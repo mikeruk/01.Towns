@@ -6,4 +6,4 @@ Code for the Git and GitHub Exercise
 
 •	{Name2} takes the role "Shuffler"
 
-•	{Name3} takes the role "Styler"
+•	[@MariusGeorgiev](https://www.github.com/MariusGeorgiev) takes the role "Styler"
