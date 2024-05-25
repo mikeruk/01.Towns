@@ -36,16 +36,17 @@ function shuffleTowns() {
 	}
 }
 
-const addNewTown = () =>{
+const addNewTown = () => {
 	var newOption = document.createElement('option');
-	let newTownName = document.getElementById("addTown1").value.trim()
+	let newTownName = document.getElementById("addTown1").value.trim();
 	newOption.textContent = newTownName;
-	if (newTownName == ''){
-		document.getElementById("errMsg").style.display = ''
+	if (newTownName === '') {
+		document.getElementById("errMsg").style.display = 'inline'; // Show error message
 	} else {
-		document.getElementById("errMsg").style.display = 'none'
+		document.getElementById("errMsg").style.display = 'none'; // Hide error message if it was visible
 		document.getElementById('towns').appendChild(newOption);
 		document.getElementById("addTown1").value = '';
 	}
-}
+};
+
 

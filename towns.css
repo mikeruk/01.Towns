@@ -1,3 +1,90 @@
-select, input {
-	width: 100px;
+/* towns.css */
+
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Arial, sans-serif;
+	background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a18cd1, #9fa4c4, #a6c1ee, #92a1cf, #fbc2eb, #fad0c4, #ff9a9e);
+	background-size: 150% 150%;
+	animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	width: 400px;
+	max-width: 90%;
+	animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+h1 {
+	color: #333;
+	margin-bottom: 20px;
+}
+
+select, input[type="text"], button {
+	margin: 10px 0;
+	padding: 10px;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+	background-color: #ff6b6b;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #ff4d4d;
+}
+
+#errMsg {
+	color: #ff4d4d;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	display: none;
+	text-align: center;
+	width: 100%;
+}
+
+#result {
+	margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+	#container {
+		width: 90%;
+		padding: 15px;
+	}
+
+	select, input[type="text"], button {
+		padding: 8px;
+	}
 }
