@@ -1,0 +1,31 @@
+{
+  "name": "01.towns",
+  "version": "1.0.0",
+  "description": "DevOps May 2024",
+  "main": "towns.html",
+  "scripts": {
+    "start": "live-server --host=localhost --port=3000 --entry-file=towns.html --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeruk/01.Towns.git"
+  },
+  "keywords": [
+    "Tema",
+    "6:",
+    "Exer",
+    "Version",
+    "Control",
+    "with",
+    "Git"
+  ],
+  "author": "SoftUni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikeruk/01.Towns/issues"
+  },
+  "homepage": "https://github.com/mikeruk/01.Towns#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
