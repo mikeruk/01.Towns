@@ -35,3 +35,17 @@ function shuffleTowns() {
 		}
 	}
 }
+
+const addNewTown = () =>{
+	var newOption = document.createElement('option');
+	let newTownName = document.getElementById("addTown1").value.trim()
+	newOption.textContent = newTownName;
+	if (newTownName == ''){
+		document.getElementById("errMsg").style.display = ''
+	} else {
+		document.getElementById("errMsg").style.display = 'none'
+		document.getElementById('towns').appendChild(newOption);
+		document.getElementById("addTown1").value = '';
+	}
+}
+
